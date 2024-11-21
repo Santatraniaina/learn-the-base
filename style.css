@@ -13,6 +13,25 @@
     --slate-gray: #6B7691ff;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
 /* ------------------------------------| FONT FAMILY |---------------------------------------- */
 
 /*===== All values =====*/
@@ -64,6 +83,12 @@ body{
 ul{
     padding: 0;
 }
+
+a{
+    text-decoration: none;
+    color: var(--blue-4);
+}
+
 
 small{
     font-family: "Inter", sans-serif;
@@ -155,30 +180,63 @@ li.navbar-list a.active{
 }
 
 
-.table-of-content{
-    width: 40vw;
+.menu{
     background-color: var(--white);
     overflow-y: scroll;
     /*
     */
 }
 @media (max-width: 768px) {
-    .table-of-content{
+    .menu{
         display: none;
         /*
         */
     }
 }
 
+.menu{
+    position: relative;
+    width: 55vw;
+}
+
+.menu li{
+    padding: 8px 12px;
+    text-wrap: nowrap;
+}
+
+.menu a{
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-wrap: nowrap;
+}
+
+.menu a:hover{
+    color: var(--white);
+    background-color: var(--blue-4);
+}
+
 .main-content{
     background-color: var(--white);
-    overflow-y: scroll;
-    scrollbar-color: var(--slate-gray);
-    padding: 40px 60px;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     /*
+    overflow-y: scroll;
     */
 }
 
+.aside, .article{
+    overflow-y: scroll;
+}
+
+.aside{
+    width: 250px;
+}
+
+aside, .aside li{
+    width: 100px;
+}
 /* ---------------------------------------------------------------------------------------- */
 
 
