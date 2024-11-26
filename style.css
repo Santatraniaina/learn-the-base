@@ -200,17 +200,23 @@ li.navbar-list a.active{
 }
 
 .menu li{
-    padding: 8px 12px;
+    /* padding: 8px 12px; */
     text-wrap: nowrap;
+    margin-bottom: .4em;
 }
 
 .menu a{
     padding: 8px 12px;
     border-radius: 8px;
     text-wrap: nowrap;
+    display: block;
 }
 
-.menu a:hover{
+.menu a.active{
+    font-weight: 600;
+}
+
+.menu a:hover, .menu a.active{
     color: var(--white);
     background-color: var(--blue-4);
 }
