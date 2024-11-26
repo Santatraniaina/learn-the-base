@@ -179,10 +179,10 @@ li.navbar-list a.active{
     */
 }
 
-
+/* TODO : Make .menu and .main-content like .aside and .article */
 .menu{
     background-color: var(--white);
-    overflow-y: scroll;
+    overflow-y: auto;
     /*
     */
 }
@@ -215,28 +215,46 @@ li.navbar-list a.active{
     background-color: var(--blue-4);
 }
 
+
 .main-content{
     background-color: var(--white);
-    padding: 40px 40px;
+    padding: 40px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    /*
-    overflow-y: scroll;
-    */
+    overflow-y: auto;
+    gap: 20px;
 }
 
 .aside, .article{
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+.article{
+    flex: 1;
+    max-width: calc(100% - 320px);
 }
 
 .aside{
-    width: 250px;
+    width: 25%;
+    max-width: 300px;
 }
 
-aside, .aside li{
-    width: 100px;
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .aside {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .article {
+        max-width: 100%;
+    }
 }
+
 /* ---------------------------------------------------------------------------------------- */
 
 
