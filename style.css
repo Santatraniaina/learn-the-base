@@ -107,6 +107,10 @@ small{
     */
 }
 
+.w-full{
+    width: 100%;
+}
+
 /* -------------------------------------| HEADER |----------------------------------------- */
 
 .header{
@@ -259,6 +263,32 @@ li.navbar-list a.active{
     .article {
         max-width: 100%;
     }
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.table-container{
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+table.table-content tr{
+    height: 64px;
+}
+
+table.table-content > tbody > tr:hover{
+    background-color: var(--slate-gray);
+}
+
+.document{
+    max-width: 42px;
+    max-height: 42px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 10px;
 }
 
 /* ---------------------------------------------------------------------------------------- */
