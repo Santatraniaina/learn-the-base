@@ -268,123 +268,19 @@ li.navbar-list a.active{
     }
 }
 
-table{
-    border-collapse: collapse;
-}
-
-
-/* TODO : Handle overflowing tbody */
-.table-container{
-    padding: 20px;
+.main-container{
     display: flex;
-    align-items: flex-start;
     justify-content: center;
 }
 
-input.checkbox{
-    border-color: var(--gray);
-    width: 16px;
-    height: 16px;
-}
-
-table.table-content th > i{
-    color: var(--gray);
-    cursor: pointer;
-}
-
-.document{
-    max-width: 42px;
-    max-height: 42px;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 10px;
-}
-
-.tags{
-    cursor: pointer;
-    border-radius: 9999px;
-    border: 1px solid var(--light-blue);
-    padding: 4px 12px;
-    font-weight: 600;
-    font-size: 12px;
-    color: var(--light-blue);
-    white-space: nowrap;
-    background-color: var(--light-blue-reverse);
-}
-
-.drawboard, .share{
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--light-blue);
-}
-
-.share{
-    border: 1px dashed var(--gray);
-    border-radius: 9999px;
-    padding: 4px 12px;
-}
-
-.small{
-    color: var(--slate-gray);
-    font-size: 13px;
-}
-
-table.table-content tbody{
-    overflow-y: auto;
-}
-
-table.table-content th{
-    color: rgb(21, 25, 31);
-    font-size: 13px;
-    font-weight: 600;
-}
-
-table.table-content tr{
-    height: 64px;
-    margin: 0px -16px;
-    border-collapse: separate;
-}
-
-table.table-content td, table.table-content th{
-    padding: 0 10px;
-}
-
-table.table-content thead th:nth-child(n+3),
-table.table-content tbody td:nth-child(n+3)
-{
-    text-align: left;
-}
-
-table.table-content thead th:nth-last-child(2){
-    color: var(--gray);
-}
-
-table.table-content thead th:nth-child(2),
-table.table-content tbody td:nth-child(2),
-table.table-content thead th:nth-last-child(1),
-table.table-content tbody td:nth-last-child(1)
-{
+table{
+    width: 80%;
     text-align: center;
+    border-collapse: collapse;
 }
 
-table.table-content thead th:nth-child(3),
-table.table-content tbody td:nth-child(3)
-{
-    width: 380px;
-    min-width: 150px;
-}
-
-table.table-content thead th:nth-child(8),
-table.table-content tbody td:nth-child(8)
-{
-    width: 220px;
-    min-width: 80px;
-}
-
-table.table-content > tbody > tr:hover{
-    border-radius: 8px;
-    background-color: #f7f9fd;
-    box-shadow: #d7dff4 0px 0px 0px 2px inset;
+th, td{
+    border: 2px solid var(--blue-4);
 }
 
 

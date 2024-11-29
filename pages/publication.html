@@ -30,224 +30,180 @@
             </div>
         </header>
         <div class="main-wrapper">
-            <main class="table-container box w-full">
-                <table class="table-content">
-                    <thead class="table-head">
+            <main class="main-container box w-full">
+                <table>
+                    <caption>Browser Compatibility</caption>
+                    <colgroup>
+                        <col class="chrome"/>
+                        <col class="edge"/>
+                        <col class="firefox"/>
+                        <col class="opera"/>
+                        <col class="safari"/>
+                    </colgroup>
+                    <thead>
                         <tr>
-                            <th>
-                                <input type="checkbox" name="select_all" id="select_all" class="checkbox"/>
-                            </th>
-                            <th>
-                                <i class="fa-solid fa-rotate-right" class="table-head-icon"></i>
-                            </th>
-                            <th>
-                                Name
-                                <i class="fa-solid fa-sort" class="table-head-icon"></i>
-                            </th>
-                            <th>
-                                Location
-                                <i class="fa-solid fa-sort" class="table-head-icon"></i>
-                            </th>
-                            <th>
-                                Shared
-                            </th>
-                            <th>
-                                Last opened
-                                <i class="fa-solid fa-sort" class="table-head-icon"></i>
-                            </th>
-                            <th>
-                                Created
-                                <i class="fa-solid fa-sort" class="table-head-icon"></i>
-                            </th>
-                            <th>
-                                Tags
-                            </th>
-                            <th>
-                                Last Opened Date
-                            </th>
-                            <th>
-                                <i class="fa-brands fa-microsoft" class="table-head-icon"></i>
-                            </th>
+                            <th rowspan="2"></th>
+                            <th colspan="5">Desktop</th>
+                            <th colspan="6">Mobile</th>
+                        </tr>
+                        <tr>
+                            <th>Chrome</th>
+                            <th>Edge</th>
+                            <th>Firefox</th>
+                            <th>Opera</th>
+                            <th>Safari</th>
+
+                            <th>Chrome Android</th>
+                            <th>Firefox for Android</th>
+                            <th>Opera Android</th>
+                            <th>Safari on IOS</th>
+                            <th>Samsung Internet</th>
+                            <th>Webview Android</th>
                         </tr>
                     </thead>
-                    <tbody class="table-body">
-                        <!-- Document 1 -->
+                    <tbody>
                         <tr>
-                            <td>
-                                <input type="checkbox" name="select_1" id="select_1" class="checkbox"/>
-                            </td>
-                            <td>
-                                <img src="../assets/data/data-image-1" alt="Document 1" class="document"/>
-                            </td>
-                            <td>
-                                <b>
-                                    HTML 5 Notes For Professionals
-                                </b>
-                            </td>
-                            <td>
-                                <span class="drawboard">
-                                    <i class="fa-solid fa-cloud fa-xs"></i>
-                                    Drawboard
-                                </span>
-                            </td>
-                            <td>
-                                <span class="share">
-                                    <i class="fa-solid fa-share fa-xs"></i>
-                                    Share
-                                </span>
-                            </td>
-                            <td>
-                                <span class="small">
-                                    1 hour ago
-                                </span>
-                            </td>
-                            <td>
-                                <span class="small">
-                                    Nov 12, 2024
-                                </span>
-                            </td>
-                            <td colspan="2">
-                                <span class="tags">HTML</span>
-                                <span class="tags">Learning</span>
-                            </td>
-                            <td>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </td>
+                            <th>table</th>
+                            <td>1</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>1.0</td>
+                            <td>4.4</td>
                         </tr>
-                        <!-- Document 2 -->
                         <tr>
-                            <td>
-                                <input type="checkbox" name="select_2" id="select_2" class="checkbox"/>
-                            </td>
-                            <td>
-                                <img src="../assets/data/data-image-2" alt="Document 2" class="document"/>
-                            </td>
-                            <td>
-                                <b>
-                                    Fiche de demande de congé - Santatra
-                                </b>
-                            </td>
-                            <td>
-                                <span class="drawboard">
-                                    <i class="fa-solid fa-cloud fa-xs"></i>
-                                    Drawboard
-                                </span>
-                            </td>
-                            <td>
-                                <span class="share">
-                                    <i class="fa-solid fa-share fa-xs"></i>
-                                    Share
-                                </span>
-                            </td>
-                            <td>
-                                <span class="small">
-                                    Yesterday
-                                </span>
-                            </td>
-                            <td>
-                                <span class="small">
-                                    3 days ago
-                                </span>
-                            </td>
-                            <td colspan="2">
-                                <span class="tags">Work</span>
-                            </td>
-                            <td>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </td>
+                            <th>align</th>
+                            <td>1</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>1.0</td>
+                            <td>4.4</td>
                         </tr>
-                        <!-- Document 3 -->
                         <tr>
-                            <td>
-                                <input type="checkbox" name="select_3" id="select_3" class="checkbox"/>
-                            </td>
-                            <td>
-                                <img src="../assets/data/data-image-3" alt="Document 3" class="document"/>
-                            </td>
-                            <td>
-                                <b>
-                                    Welcome to Drawboard PDF - Read me!
-                                </b>
-                            </td>
-                            <td>
-                                <span class="drawboard">
-                                    <i class="fa-solid fa-cloud fa-xs"></i>
-                                    Drawboard
-                                </span>
-                            </td>
-                            <td>
-                                <span class="share">
-                                    <i class="fa-solid fa-share fa-xs"></i>
-                                    Share
-                                </span>
-                            </td>
-                            <td>
-                                <span class="small">
-                                    22 hours ago
-                                </span>
-                            </td>
-                            <td>
-                                <span class="small">
-                                    Nov 26, 2024
-                                </span>
-                            </td>
-                            <td colspan="2">
-                                <span class="share">
-                                    <i class="fa-solid fa-tag fa-md" style="transform: scaleX(-1);"></i>
-                                    Add tag
-                                </span>
-                            </td>
-                            <td>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </td>
+                            <th>bgcolor</th>
+                            <td>1</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>1.0</td>
+                            <td>4.4</td>
                         </tr>
-                        <!-- Document 4 -->
                         <tr>
-                            <td>
-                                <input type="checkbox" name="select_4" id="select_4" class="checkbox"/>
-                            </td>
-                            <td>
-                                <img src="../assets/data/data-image-4" alt="Document 4" class="document"/>
-                            </td>
-                            <td>
-                                <b>
-                                    CSS Notes For Professionals
-                                </b>
-                            </td>
-                            <td>
-                                <span class="drawboard">
-                                    <i class="fa-solid fa-cloud fa-xs"></i>
-                                    Drawboard
-                                </span>
-                            </td>
-                            <td>
-                                <span class="share">
-                                    <i class="fa-solid fa-share fa-xs"></i>
-                                    Share
-                                </span>
-                            </td>
-                            <td>
-                                <span class="small">
-                                    Today
-                                </span>
-                            </td>
-                            <td>
-                                <span class="small">
-                                    Today
-                                </span>
-                            </td>
-                            <td colspan="2">
-                                <span class="tags">CSS</span>
-                                <span class="tags">Learning</span>
-                            </td>
-                            <td>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </td>
+                            <th>border</th>
+                            <td>1</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>1.0</td>
+                            <td>4.4</td>
+                        </tr>
+                        <tr>
+                            <th>cellpadding</th>
+                            <td>1</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>1.0</td>
+                            <td>4.4</td>
+                        </tr>
+                        <tr>
+                            <th>cellspacing</th>
+                            <td>1</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>1.0</td>
+                            <td>4.4</td>
+                        </tr>
+                        <tr>
+                            <th>frame</th>
+                            <td>1</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>1.0</td>
+                            <td>4.4</td>
+                        </tr>
+                        <tr>
+                            <th>rules</th>
+                            <td>1</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>1.0</td>
+                            <td>4.4</td>
+                        </tr>
+                        <tr>
+                            <th>summary</th>
+                            <td>1</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>1.0</td>
+                            <td>4.4</td>
+                        </tr>
+                        <tr>
+                            <th>width</th>
+                            <td>1</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>≤12.1</td>
+                            <td>1</td>
+                            <td>1.0</td>
+                            <td>4.4</td>
                         </tr>
                     </tbody>
-                    <tfoot class="table-footer">
 
-                    </tfoot>
                 </table>
             </main>
         </div>
